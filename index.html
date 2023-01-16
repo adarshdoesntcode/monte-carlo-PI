@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Monte Carlo</title>
+</head>
+<body>
+  <h2>Monte Carlo Estimation of π</h2>
+
+  <div class="container">
+
+    
+    <div class="top-container">
+      <div class="chartdiv">
+        <canvas id="chart-canvas" width="900" height="525"></canvas>
+      </div>
+      <div class="hitsdiv">
+        <canvas id="hits-canvas" width="500" height="500"></canvas>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+
+      <div class="left">
+        <p><strong>PI Calculation</strong></p>
+        <div class="input-div">
+          <input type="text" id="iteration-count" placeholder="times...">
+        </div>
+
+        <div class="btn-div">
+          <button value="Start" id="init-btn">Start</button>
+          <button value="Reset" id="reset-btn">Reset</button>
+        </div>  
+      </div>
+
+      <div class="right">
+        <p><strong>Expected:</strong> <span id="expected"></span></p>
+        <p><strong>Computed:</strong> <span id="computed"></span></p>
+        <p><strong>Error:</strong> <span id="error"></span></p>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js" integrity="sha512-fYE9wAJg2PYbpJPxyGcuzDSiMuWJiw58rKa9MWQICkAqEO+xeJ5hg5qPihF8kqa7tbgJxsmgY0Yp51+IMrSEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.1.2/dist/chart.umd.min.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="draw.js"></script>
+
+</body>
+</html>
